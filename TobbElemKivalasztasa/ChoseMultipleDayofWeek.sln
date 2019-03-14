@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChoseMultipleDayofWeek", "ChoseMultipleDayofWeek.csproj", "{FB45A86B-66F7-4362-8D45-587F7D8228EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB45A86B-66F7-4362-8D45-587F7D8228EB}.Debug|x86.ActiveCfg = Debug|x86
+		{FB45A86B-66F7-4362-8D45-587F7D8228EB}.Debug|x86.Build.0 = Debug|x86
+		{FB45A86B-66F7-4362-8D45-587F7D8228EB}.Release|x86.ActiveCfg = Release|x86
+		{FB45A86B-66F7-4362-8D45-587F7D8228EB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77E5C544-F641-4552-9B1D-916939DC9F75}
+	EndGlobalSection
+EndGlobal
