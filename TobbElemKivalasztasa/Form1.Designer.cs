@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.listBoxNapok = new System.Windows.Forms.ListBox();
+            this.labelEredmeny = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listBox1
+            // listBoxNapok
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.listBoxNapok.FormattingEnabled = true;
+            this.listBoxNapok.Items.AddRange(new object[] {
             "Hétfő",
             "Kedd",
             "Szerda",
             "Csütörtök",
             "Péntek"});
-            this.listBox1.Location = new System.Drawing.Point(13, 13);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBox1.Size = new System.Drawing.Size(120, 69);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBoxNapok.Location = new System.Drawing.Point(13, 13);
+            this.listBoxNapok.Name = "listBoxNapok";
+            this.listBoxNapok.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listBoxNapok.Size = new System.Drawing.Size(120, 69);
+            this.listBoxNapok.TabIndex = 0;
+            this.listBoxNapok.SelectedIndexChanged += new System.EventHandler(this.listBoxNapok_SelectedIndexChanged);
             // 
-            // label1
+            // labelEredmeny
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 131);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 1;
+            this.labelEredmeny.AutoSize = true;
+            this.labelEredmeny.Location = new System.Drawing.Point(13, 131);
+            this.labelEredmeny.Name = "labelEredmeny";
+            this.labelEredmeny.Size = new System.Drawing.Size(0, 13);
+            this.labelEredmeny.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 266);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.labelEredmeny);
+            this.Controls.Add(this.listBoxNapok);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -73,8 +73,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox listBoxNapok;
+        private System.Windows.Forms.Label labelEredmeny;
     }
 }
 
