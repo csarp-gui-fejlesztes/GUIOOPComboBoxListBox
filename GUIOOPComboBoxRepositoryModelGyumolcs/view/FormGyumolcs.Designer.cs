@@ -102,7 +102,6 @@
             this.buttonHozzaad.TabIndex = 4;
             this.buttonHozzaad.Text = "Hozzáad";
             this.buttonHozzaad.UseVisualStyleBackColor = true;
-            this.buttonHozzaad.Click += new System.EventHandler(this.buttonHozzaad_Click);
             // 
             // buttonTorol
             // 
@@ -112,7 +111,6 @@
             this.buttonTorol.TabIndex = 5;
             this.buttonTorol.Text = "Töröl";
             this.buttonTorol.UseVisualStyleBackColor = true;
-            this.buttonTorol.Click += new System.EventHandler(this.buttonTorol_Click);
             // 
             // listBoxVasaroltGyumolcsMennyisegek
             // 
@@ -148,7 +146,6 @@
             this.buttonKilepes.TabIndex = 9;
             this.buttonKilepes.Text = "Kilepes";
             this.buttonKilepes.UseVisualStyleBackColor = true;
-            this.buttonKilepes.Click += new System.EventHandler(this.buttonKilepes_Click);
             // 
             // Form1
             // 
