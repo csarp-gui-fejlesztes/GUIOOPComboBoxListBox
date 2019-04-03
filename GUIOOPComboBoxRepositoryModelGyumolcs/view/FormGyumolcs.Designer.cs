@@ -1,6 +1,6 @@
 ﻿namespace GUIOOPComboBoxListBox
 {
-    partial class Form1
+    partial class FormGyumolcs
     {
         /// <summary>
         /// Required designer variable.
