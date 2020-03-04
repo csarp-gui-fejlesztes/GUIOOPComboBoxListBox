@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIListBoxTipusfeladatokVeletlenSzamok", "GUIListBoxTipusfeladatokVeletlenSzamok\GUIListBoxTipusfeladatokVeletlenSzamok.csproj", "{A86F631C-00A2-49B0-B019-7635750DC365}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIListBoxTipusfeladatokVeletlenValosSzamok", "GUIListBoxTipusfeladatokVeletlenValosSzamok.csproj", "{A86F631C-00A2-49B0-B019-7635750DC365}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2FA5D1B6-F0E2-4D55-99F5-13F48EB8AA66}
+		SolutionGuid = {128F0B1C-3317-4DCD-9563-99827562FE7F}
 	EndGlobalSection
 EndGlobal
