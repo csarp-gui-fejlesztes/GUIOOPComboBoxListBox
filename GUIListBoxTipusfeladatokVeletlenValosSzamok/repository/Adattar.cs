@@ -10,7 +10,7 @@ namespace GUIListBoxTipusfeladatokVeletlenSzamok.repository
     {
         List<double> adattar;
 
-        private void feltoltesVeletlenValosSzamokkal(int veletlenSzamokSzama)
+        public void feltoltesVeletlenValosSzamokkal(int veletlenSzamokSzama)
         {
             Random rnd = new Random();
             for (int i = 0; i < veletlenSzamokSzama; i++)
