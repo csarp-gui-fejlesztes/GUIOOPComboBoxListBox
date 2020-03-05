@@ -39,9 +39,9 @@
             this.labelAtlag = new System.Windows.Forms.Label();
             this.textBoxAtlag = new System.Windows.Forms.TextBox();
             this.labelLegkisebb = new System.Windows.Forms.Label();
-            this.textBoxLegnagyobbSzam = new System.Windows.Forms.TextBox();
+            this.textBoxLegkisebbSzam = new System.Windows.Forms.TextBox();
             this.labelLegnagyobbSzam = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxLegnagyobbSzam = new System.Windows.Forms.TextBox();
             this.labelPozitvSzamokKozolLegkisebb = new System.Windows.Forms.Label();
             this.textBoxPozitivSzamokKozulLegkisebb = new System.Windows.Forms.TextBox();
             this.labelNegativSzamokKozulLegnagyobb = new System.Windows.Forms.Label();
@@ -149,13 +149,13 @@
             this.labelLegkisebb.TabIndex = 10;
             this.labelLegkisebb.Text = "Legkisebb szám:";
             // 
-            // textBoxLegnagyobbSzam
+            // textBoxLegkisebbSzam
             // 
-            this.textBoxLegnagyobbSzam.Location = new System.Drawing.Point(114, 181);
-            this.textBoxLegnagyobbSzam.Name = "textBoxLegnagyobbSzam";
-            this.textBoxLegnagyobbSzam.ReadOnly = true;
-            this.textBoxLegnagyobbSzam.Size = new System.Drawing.Size(82, 20);
-            this.textBoxLegnagyobbSzam.TabIndex = 11;
+            this.textBoxLegkisebbSzam.Location = new System.Drawing.Point(114, 181);
+            this.textBoxLegkisebbSzam.Name = "textBoxLegkisebbSzam";
+            this.textBoxLegkisebbSzam.ReadOnly = true;
+            this.textBoxLegkisebbSzam.Size = new System.Drawing.Size(82, 20);
+            this.textBoxLegkisebbSzam.TabIndex = 11;
             // 
             // labelLegnagyobbSzam
             // 
@@ -166,13 +166,13 @@
             this.labelLegnagyobbSzam.TabIndex = 12;
             this.labelLegnagyobbSzam.Text = "Legnagyobb szám:";
             // 
-            // textBox1
+            // textBoxLegnagyobbSzam
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 217);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(82, 20);
-            this.textBox1.TabIndex = 13;
+            this.textBoxLegnagyobbSzam.Location = new System.Drawing.Point(114, 217);
+            this.textBoxLegnagyobbSzam.Name = "textBoxLegnagyobbSzam";
+            this.textBoxLegnagyobbSzam.ReadOnly = true;
+            this.textBoxLegnagyobbSzam.Size = new System.Drawing.Size(82, 20);
+            this.textBoxLegnagyobbSzam.TabIndex = 13;
             // 
             // labelPozitvSzamokKozolLegkisebb
             // 
@@ -217,9 +217,9 @@
             this.Controls.Add(this.labelNegativSzamokKozulLegnagyobb);
             this.Controls.Add(this.textBoxPozitivSzamokKozulLegkisebb);
             this.Controls.Add(this.labelPozitvSzamokKozolLegkisebb);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.labelLegnagyobbSzam);
             this.Controls.Add(this.textBoxLegnagyobbSzam);
+            this.Controls.Add(this.labelLegnagyobbSzam);
+            this.Controls.Add(this.textBoxLegkisebbSzam);
             this.Controls.Add(this.labelLegkisebb);
             this.Controls.Add(this.textBoxAtlag);
             this.Controls.Add(this.labelAtlag);
@@ -251,9 +251,9 @@
         private System.Windows.Forms.Label labelAtlag;
         private System.Windows.Forms.TextBox textBoxAtlag;
         private System.Windows.Forms.Label labelLegkisebb;
-        private System.Windows.Forms.TextBox textBoxLegnagyobbSzam;
+        private System.Windows.Forms.TextBox textBoxLegkisebbSzam;
         private System.Windows.Forms.Label labelLegnagyobbSzam;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxLegnagyobbSzam;
         private System.Windows.Forms.Label labelPozitvSzamokKozolLegkisebb;
         private System.Windows.Forms.TextBox textBoxPozitivSzamokKozulLegkisebb;
         private System.Windows.Forms.Label labelNegativSzamokKozulLegnagyobb;
