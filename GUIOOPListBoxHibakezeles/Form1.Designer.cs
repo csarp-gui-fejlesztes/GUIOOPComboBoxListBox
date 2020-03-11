@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBoxAdatbevitel = new System.Windows.Forms.GroupBox();
-            this.comboBoxOperaciosRendszer = new System.Windows.Forms.ComboBox();
-            this.labelOperaciosRendszer = new System.Windows.Forms.Label();
+            this.labelHibaSzoveg = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelHibaTipus = new System.Windows.Forms.Label();
             this.comboBoxHibaTipusa = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelHibaSzoveg = new System.Windows.Forms.Label();
+            this.labelOperaciosRendszer = new System.Windows.Forms.Label();
+            this.comboBoxOperaciosRendszer = new System.Windows.Forms.ComboBox();
             this.listBoxHibauzenetek = new System.Windows.Forms.ListBox();
             this.buttonHozzaad = new System.Windows.Forms.Button();
             this.buttonTorol = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.buttonKilepes = new System.Windows.Forms.Button();
             this.groupBoxSzamitasok = new System.Windows.Forms.GroupBox();
-            this.labelDebianHibakSzama = new System.Windows.Forms.Label();
-            this.labelWindows = new System.Windows.Forms.Label();
-            this.labelMacOS = new System.Windows.Forms.Label();
-            this.labelUSER = new System.Windows.Forms.Label();
             this.labelNemUserHibakSzama = new System.Windows.Forms.Label();
+            this.labelUSER = new System.Windows.Forms.Label();
+            this.labelMacOS = new System.Windows.Forms.Label();
+            this.labelWindows = new System.Windows.Forms.Label();
+            this.labelDebianHibakSzama = new System.Windows.Forms.Label();
+            this.labelHibaLista = new System.Windows.Forms.Label();
             this.groupBoxAdatbevitel.SuspendLayout();
             this.groupBoxSzamitasok.SuspendLayout();
             this.SuspendLayout();
@@ -65,26 +65,21 @@
             this.groupBoxAdatbevitel.TabStop = false;
             this.groupBoxAdatbevitel.Text = "Adatbevitel";
             // 
-            // comboBoxOperaciosRendszer
+            // labelHibaSzoveg
             // 
-            this.comboBoxOperaciosRendszer.FormattingEnabled = true;
-            this.comboBoxOperaciosRendszer.Items.AddRange(new object[] {
-            "Debian",
-            "Windows",
-            "MacOs"});
-            this.comboBoxOperaciosRendszer.Location = new System.Drawing.Point(140, 53);
-            this.comboBoxOperaciosRendszer.Name = "comboBoxOperaciosRendszer";
-            this.comboBoxOperaciosRendszer.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxOperaciosRendszer.TabIndex = 0;
+            this.labelHibaSzoveg.AutoSize = true;
+            this.labelHibaSzoveg.Location = new System.Drawing.Point(17, 139);
+            this.labelHibaSzoveg.Name = "labelHibaSzoveg";
+            this.labelHibaSzoveg.Size = new System.Drawing.Size(72, 13);
+            this.labelHibaSzoveg.TabIndex = 5;
+            this.labelHibaSzoveg.Text = "Hiba szövege";
             // 
-            // labelOperaciosRendszer
+            // textBox1
             // 
-            this.labelOperaciosRendszer.AutoSize = true;
-            this.labelOperaciosRendszer.Location = new System.Drawing.Point(17, 53);
-            this.labelOperaciosRendszer.Name = "labelOperaciosRendszer";
-            this.labelOperaciosRendszer.Size = new System.Drawing.Size(98, 13);
-            this.labelOperaciosRendszer.TabIndex = 1;
-            this.labelOperaciosRendszer.Text = "Operációs rendszer";
+            this.textBox1.Location = new System.Drawing.Point(140, 136);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
             // 
             // labelHibaTipus
             // 
@@ -110,21 +105,26 @@
             this.comboBoxHibaTipusa.Size = new System.Drawing.Size(121, 21);
             this.comboBoxHibaTipusa.TabIndex = 2;
             // 
-            // textBox1
+            // labelOperaciosRendszer
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.labelOperaciosRendszer.AutoSize = true;
+            this.labelOperaciosRendszer.Location = new System.Drawing.Point(17, 53);
+            this.labelOperaciosRendszer.Name = "labelOperaciosRendszer";
+            this.labelOperaciosRendszer.Size = new System.Drawing.Size(98, 13);
+            this.labelOperaciosRendszer.TabIndex = 1;
+            this.labelOperaciosRendszer.Text = "Operációs rendszer";
             // 
-            // labelHibaSzoveg
+            // comboBoxOperaciosRendszer
             // 
-            this.labelHibaSzoveg.AutoSize = true;
-            this.labelHibaSzoveg.Location = new System.Drawing.Point(17, 139);
-            this.labelHibaSzoveg.Name = "labelHibaSzoveg";
-            this.labelHibaSzoveg.Size = new System.Drawing.Size(72, 13);
-            this.labelHibaSzoveg.TabIndex = 5;
-            this.labelHibaSzoveg.Text = "Hiba szövege";
+            this.comboBoxOperaciosRendszer.FormattingEnabled = true;
+            this.comboBoxOperaciosRendszer.Items.AddRange(new object[] {
+            "Debian",
+            "Windows",
+            "MacOs"});
+            this.comboBoxOperaciosRendszer.Location = new System.Drawing.Point(140, 53);
+            this.comboBoxOperaciosRendszer.Name = "comboBoxOperaciosRendszer";
+            this.comboBoxOperaciosRendszer.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxOperaciosRendszer.TabIndex = 0;
             // 
             // listBoxHibauzenetek
             // 
@@ -175,32 +175,14 @@
             this.groupBoxSzamitasok.TabStop = false;
             this.groupBoxSzamitasok.Text = "Számítások";
             // 
-            // labelDebianHibakSzama
+            // labelNemUserHibakSzama
             // 
-            this.labelDebianHibakSzama.AutoSize = true;
-            this.labelDebianHibakSzama.Location = new System.Drawing.Point(18, 33);
-            this.labelDebianHibakSzama.Name = "labelDebianHibakSzama";
-            this.labelDebianHibakSzama.Size = new System.Drawing.Size(106, 13);
-            this.labelDebianHibakSzama.TabIndex = 0;
-            this.labelDebianHibakSzama.Text = "Debián hibák száma:";
-            // 
-            // labelWindows
-            // 
-            this.labelWindows.AutoSize = true;
-            this.labelWindows.Location = new System.Drawing.Point(18, 78);
-            this.labelWindows.Name = "labelWindows";
-            this.labelWindows.Size = new System.Drawing.Size(116, 13);
-            this.labelWindows.TabIndex = 1;
-            this.labelWindows.Text = "Windows hibák száma:";
-            // 
-            // labelMacOS
-            // 
-            this.labelMacOS.AutoSize = true;
-            this.labelMacOS.Location = new System.Drawing.Point(18, 116);
-            this.labelMacOS.Name = "labelMacOS";
-            this.labelMacOS.Size = new System.Drawing.Size(108, 13);
-            this.labelMacOS.TabIndex = 2;
-            this.labelMacOS.Text = "MacOS hibák száma:";
+            this.labelNemUserHibakSzama.AutoSize = true;
+            this.labelNemUserHibakSzama.Location = new System.Drawing.Point(18, 245);
+            this.labelNemUserHibakSzama.Name = "labelNemUserHibakSzama";
+            this.labelNemUserHibakSzama.Size = new System.Drawing.Size(127, 13);
+            this.labelNemUserHibakSzama.TabIndex = 4;
+            this.labelNemUserHibakSzama.Text = "Nem USER hibák száma:";
             // 
             // labelUSER
             // 
@@ -211,20 +193,48 @@
             this.labelUSER.TabIndex = 3;
             this.labelUSER.Text = "USER hibák száma:";
             // 
-            // labelNemUserHibakSzama
+            // labelMacOS
             // 
-            this.labelNemUserHibakSzama.AutoSize = true;
-            this.labelNemUserHibakSzama.Location = new System.Drawing.Point(18, 245);
-            this.labelNemUserHibakSzama.Name = "labelNemUserHibakSzama";
-            this.labelNemUserHibakSzama.Size = new System.Drawing.Size(127, 13);
-            this.labelNemUserHibakSzama.TabIndex = 4;
-            this.labelNemUserHibakSzama.Text = "Nem USER hibák száma:";
+            this.labelMacOS.AutoSize = true;
+            this.labelMacOS.Location = new System.Drawing.Point(18, 116);
+            this.labelMacOS.Name = "labelMacOS";
+            this.labelMacOS.Size = new System.Drawing.Size(108, 13);
+            this.labelMacOS.TabIndex = 2;
+            this.labelMacOS.Text = "MacOS hibák száma:";
+            // 
+            // labelWindows
+            // 
+            this.labelWindows.AutoSize = true;
+            this.labelWindows.Location = new System.Drawing.Point(18, 78);
+            this.labelWindows.Name = "labelWindows";
+            this.labelWindows.Size = new System.Drawing.Size(116, 13);
+            this.labelWindows.TabIndex = 1;
+            this.labelWindows.Text = "Windows hibák száma:";
+            // 
+            // labelDebianHibakSzama
+            // 
+            this.labelDebianHibakSzama.AutoSize = true;
+            this.labelDebianHibakSzama.Location = new System.Drawing.Point(18, 33);
+            this.labelDebianHibakSzama.Name = "labelDebianHibakSzama";
+            this.labelDebianHibakSzama.Size = new System.Drawing.Size(106, 13);
+            this.labelDebianHibakSzama.TabIndex = 0;
+            this.labelDebianHibakSzama.Text = "Debián hibák száma:";
+            // 
+            // labelHibaLista
+            // 
+            this.labelHibaLista.AutoSize = true;
+            this.labelHibaLista.Location = new System.Drawing.Point(37, 217);
+            this.labelHibaLista.Name = "labelHibaLista";
+            this.labelHibaLista.Size = new System.Drawing.Size(156, 13);
+            this.labelHibaLista.TabIndex = 5;
+            this.labelHibaLista.Text = "A rendszerben lévő hibák listája";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelHibaLista);
             this.Controls.Add(this.groupBoxSzamitasok);
             this.Controls.Add(this.buttonKilepes);
             this.Controls.Add(this.buttonTorol);
@@ -238,6 +248,7 @@
             this.groupBoxSzamitasok.ResumeLayout(false);
             this.groupBoxSzamitasok.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -253,7 +264,6 @@
         private System.Windows.Forms.ListBox listBoxHibauzenetek;
         private System.Windows.Forms.Button buttonHozzaad;
         private System.Windows.Forms.Button buttonTorol;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button buttonKilepes;
         private System.Windows.Forms.GroupBox groupBoxSzamitasok;
         private System.Windows.Forms.Label labelNemUserHibakSzama;
@@ -261,6 +271,7 @@
         private System.Windows.Forms.Label labelMacOS;
         private System.Windows.Forms.Label labelWindows;
         private System.Windows.Forms.Label labelDebianHibakSzama;
+        private System.Windows.Forms.Label labelHibaLista;
     }
 }
 
