@@ -30,13 +30,13 @@
         {
             this.labelMarka = new System.Windows.Forms.Label();
             this.comboBoxMarka = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownEvjarat = new System.Windows.Forms.NumericUpDown();
             this.labelEvjarat = new System.Windows.Forms.Label();
             this.groupBoxUzemanyag = new System.Windows.Forms.GroupBox();
-            this.radioButtonGaz = new System.Windows.Forms.RadioButton();
-            this.radioButtonBenzin = new System.Windows.Forms.RadioButton();
-            this.radioButtonDizel = new System.Windows.Forms.RadioButton();
             this.radioButtonElektormos = new System.Windows.Forms.RadioButton();
+            this.radioButtonDizel = new System.Windows.Forms.RadioButton();
+            this.radioButtonBenzin = new System.Windows.Forms.RadioButton();
+            this.radioButtonGaz = new System.Windows.Forms.RadioButton();
             this.listBoxAutok = new System.Windows.Forms.ListBox();
             this.buttonHozzadas = new System.Windows.Forms.Button();
             this.buttonTorles = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             this.textBoxElektromosDb = new System.Windows.Forms.TextBox();
             this.labelDiesel = new System.Windows.Forms.Label();
             this.labelElektromosDb = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEvjarat)).BeginInit();
             this.groupBoxUzemanyag.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,23 +76,23 @@
             this.comboBoxMarka.Size = new System.Drawing.Size(185, 21);
             this.comboBoxMarka.TabIndex = 1;
             // 
-            // numericUpDown1
+            // numericUpDownEvjarat
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(261, 62);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDownEvjarat.Location = new System.Drawing.Point(261, 62);
+            this.numericUpDownEvjarat.Maximum = new decimal(new int[] {
             2020,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numericUpDownEvjarat.Minimum = new decimal(new int[] {
             1980,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 2;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDownEvjarat.Name = "numericUpDownEvjarat";
+            this.numericUpDownEvjarat.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownEvjarat.TabIndex = 2;
+            this.numericUpDownEvjarat.Value = new decimal(new int[] {
             1980,
             0,
             0,
@@ -120,27 +120,16 @@
             this.groupBoxUzemanyag.TabStop = false;
             this.groupBoxUzemanyag.Text = "Üzemanyag";
             // 
-            // radioButtonGaz
+            // radioButtonElektormos
             // 
-            this.radioButtonGaz.AutoSize = true;
-            this.radioButtonGaz.Location = new System.Drawing.Point(6, 19);
-            this.radioButtonGaz.Name = "radioButtonGaz";
-            this.radioButtonGaz.Size = new System.Drawing.Size(44, 17);
-            this.radioButtonGaz.TabIndex = 0;
-            this.radioButtonGaz.TabStop = true;
-            this.radioButtonGaz.Text = "Gáz";
-            this.radioButtonGaz.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonBenzin
-            // 
-            this.radioButtonBenzin.AutoSize = true;
-            this.radioButtonBenzin.Location = new System.Drawing.Point(80, 19);
-            this.radioButtonBenzin.Name = "radioButtonBenzin";
-            this.radioButtonBenzin.Size = new System.Drawing.Size(57, 17);
-            this.radioButtonBenzin.TabIndex = 1;
-            this.radioButtonBenzin.TabStop = true;
-            this.radioButtonBenzin.Text = "Benzin";
-            this.radioButtonBenzin.UseVisualStyleBackColor = true;
+            this.radioButtonElektormos.AutoSize = true;
+            this.radioButtonElektormos.Location = new System.Drawing.Point(226, 19);
+            this.radioButtonElektormos.Name = "radioButtonElektormos";
+            this.radioButtonElektormos.Size = new System.Drawing.Size(77, 17);
+            this.radioButtonElektormos.TabIndex = 3;
+            this.radioButtonElektormos.TabStop = true;
+            this.radioButtonElektormos.Text = "Elektromos";
+            this.radioButtonElektormos.UseVisualStyleBackColor = true;
             // 
             // radioButtonDizel
             // 
@@ -153,16 +142,27 @@
             this.radioButtonDizel.Text = "Diesel";
             this.radioButtonDizel.UseVisualStyleBackColor = true;
             // 
-            // radioButtonElektormos
+            // radioButtonBenzin
             // 
-            this.radioButtonElektormos.AutoSize = true;
-            this.radioButtonElektormos.Location = new System.Drawing.Point(226, 19);
-            this.radioButtonElektormos.Name = "radioButtonElektormos";
-            this.radioButtonElektormos.Size = new System.Drawing.Size(77, 17);
-            this.radioButtonElektormos.TabIndex = 3;
-            this.radioButtonElektormos.TabStop = true;
-            this.radioButtonElektormos.Text = "Elektromos";
-            this.radioButtonElektormos.UseVisualStyleBackColor = true;
+            this.radioButtonBenzin.AutoSize = true;
+            this.radioButtonBenzin.Location = new System.Drawing.Point(80, 19);
+            this.radioButtonBenzin.Name = "radioButtonBenzin";
+            this.radioButtonBenzin.Size = new System.Drawing.Size(57, 17);
+            this.radioButtonBenzin.TabIndex = 1;
+            this.radioButtonBenzin.TabStop = true;
+            this.radioButtonBenzin.Text = "Benzin";
+            this.radioButtonBenzin.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonGaz
+            // 
+            this.radioButtonGaz.AutoSize = true;
+            this.radioButtonGaz.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonGaz.Name = "radioButtonGaz";
+            this.radioButtonGaz.Size = new System.Drawing.Size(44, 17);
+            this.radioButtonGaz.TabIndex = 0;
+            this.radioButtonGaz.TabStop = true;
+            this.radioButtonGaz.Text = "Gáz";
+            this.radioButtonGaz.UseVisualStyleBackColor = true;
             // 
             // listBoxAutok
             // 
@@ -286,12 +286,12 @@
             this.Controls.Add(this.listBoxAutok);
             this.Controls.Add(this.groupBoxUzemanyag);
             this.Controls.Add(this.labelEvjarat);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDownEvjarat);
             this.Controls.Add(this.comboBoxMarka);
             this.Controls.Add(this.labelMarka);
             this.Name = "FormAutok";
             this.Text = "Autók nyilvántartása";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEvjarat)).EndInit();
             this.groupBoxUzemanyag.ResumeLayout(false);
             this.groupBoxUzemanyag.PerformLayout();
             this.ResumeLayout(false);
@@ -303,7 +303,7 @@
 
         private System.Windows.Forms.Label labelMarka;
         private System.Windows.Forms.ComboBox comboBoxMarka;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDownEvjarat;
         private System.Windows.Forms.Label labelEvjarat;
         private System.Windows.Forms.GroupBox groupBoxUzemanyag;
         private System.Windows.Forms.RadioButton radioButtonElektormos;
